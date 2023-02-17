@@ -11,7 +11,7 @@ int main(void)
 	{
 		if (ch == 'q' || ch == 'e')
 			continue;
-		print(ch);
+		printf(ch);
 	}
 	putchar('\n');
 	return (0);

@@ -13,7 +13,7 @@ void times_table(void)
 		{
 			int val = i * j;
 
-			if (i > 0 && i < 9)
+			if (j > 0 && j < 9)
 			{
 				if (val >= 10)
 				{

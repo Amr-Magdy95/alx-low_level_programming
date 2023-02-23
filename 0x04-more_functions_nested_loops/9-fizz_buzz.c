@@ -1,7 +1,18 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - fizzbuzz
+ * _putchar - c to stdout
+ * @c: char
+ * Return: 1 on success
+ */
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
+ * fb - fizzbuzz
  * Return: print
  */
 
@@ -39,6 +50,11 @@ void fb(void)
 		}
 	}
 }
+
+/**
+ * main - entry
+ * Return: 0
+ */
 
 int main(void)
 {

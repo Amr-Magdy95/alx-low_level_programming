@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * fizz_buzz - fizzbuzz
+ * main - fizzbuzz
  * Return: print
  */
 
-void fizz_buzz(void)
+void fb(void)
 {
 	int i;
 
@@ -25,7 +25,7 @@ void fizz_buzz(void)
 			_putchar('z');
 			_putchar('z');
 		}
-		else
+		if (i % 5 != 0 && i % 3 != 0)
 		{
 			if (i >= 10)
 			{
@@ -38,4 +38,11 @@ void fizz_buzz(void)
 			_putchar(' ');
 		}
 	}
+}
+
+int main(void)
+{
+	fb();
+
+	return (0);
 }

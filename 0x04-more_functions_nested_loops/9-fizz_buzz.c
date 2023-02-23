@@ -48,6 +48,10 @@ void fb(void)
 		{
 			_putchar(' ');
 		}
+		else
+		{
+			_putchar('\n');
+		}
 	}
 }
 

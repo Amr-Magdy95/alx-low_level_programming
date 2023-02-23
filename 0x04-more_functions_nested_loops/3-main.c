@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	print_numbers();
+	print_square(10);
 	return (0);
 }

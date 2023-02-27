@@ -8,11 +8,12 @@
 
 void _puts(char *str)
 {
-	int n = _strlen(str) - 1, i = 0;
+	int  i = 0;
 
-	while (i < n)
+	while (*(str + i) != '\0')
 	{
 		_putchar(*(str + i));
+		i++;
 	}
 	_putchar('\n');
 }

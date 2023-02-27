@@ -12,8 +12,11 @@ void puts2(char *str)
 
 	while (j == 1)
 	{
-		_putchar('a');
-		if (*(str + i) == '\0' || *(str + i - 1) == '\0')
+		if (*(str + i) == '\0')
+		{
+			break;
+		}
+		if (*(str + i - 1) == '\0' && i == 0)
 		{
 			break;
 		}

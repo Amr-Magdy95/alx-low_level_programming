@@ -16,7 +16,7 @@ void puts2(char *str)
 		{
 			break;
 		}
-		if (*(str + i - 1) == '\0' && i == 0)
+		if (*(str + i - 1) == '\0' && i > 0)
 		{
 			break;
 		}

@@ -17,6 +17,6 @@ void puts2(char *str)
 			break;
 		}
 		_putchar(*(str + i));
-		i += 2;
+		i = i + 2;
 	}
 }

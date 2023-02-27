@@ -16,6 +16,7 @@ void print_rev(char *s)
 	}
 
 	n = n - 2;
+	_putchar('0' + n);
 
 	while (n >= 0)
 	{

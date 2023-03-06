@@ -12,14 +12,14 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (s[i] != '\0')
 	{
-		bool found = false;
+		int found = 0;
 		int j = 0;
 
 		while (accept[j] != '\0')
 		{
 			if (s[i] == accept[j])
 			{
-				found = true;
+				found = 1;
 			}
 			j++;
 		}
@@ -30,4 +30,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
+	return (0);
 }

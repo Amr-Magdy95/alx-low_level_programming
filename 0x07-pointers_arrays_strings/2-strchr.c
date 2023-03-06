@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *_strchr - descriptive
  *@s: char ptr

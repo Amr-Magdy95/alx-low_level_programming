@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 /**
  *_strchr - descriptive
  *@s: char ptr
@@ -18,5 +17,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }

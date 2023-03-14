@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * str_concat - concat two strings
  * @s1: string 1
@@ -17,6 +18,8 @@ char *str_concat(char *s1, char *s2)
 	while (s2[m] != '\0')
 		m++;
 	*res = (char *) malloc(sizeof(char) * (m + n) + 1);
+	if (res == NULL)
+		return (NULL);
 	while (i <= n)
 	{
 		res[i] = s1[i];

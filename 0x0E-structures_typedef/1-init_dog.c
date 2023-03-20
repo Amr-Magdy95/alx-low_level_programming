@@ -1,4 +1,3 @@
-#include "dog.h"
 /**
  * init_dog - desc
  * @d: struct dog *

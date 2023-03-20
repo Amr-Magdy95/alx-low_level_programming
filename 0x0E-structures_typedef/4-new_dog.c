@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
  * new_dog - desc
  * @name: char *
@@ -8,11 +9,11 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	int nameLen = 0, ownerLen = 0, i = 0, j = 0, k = 1;
 	dog_t *res = malloc(sizeof(dog_t));
 
 	if (res == NULL)
 		return (NULL);
-	int nameLen = 0, ownerLen = 0, i = 0, j = 0, k = 1;
 
 	while (name[nameLen] != '\0')
 		nameLen++;

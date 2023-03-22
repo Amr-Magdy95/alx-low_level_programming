@@ -8,7 +8,7 @@
  * @argv: char*[]
  * Return: int
  */
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int (*f)(int a, int b);
 	int res = 0;

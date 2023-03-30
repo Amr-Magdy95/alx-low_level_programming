@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 			temp->str = malloc(sizeof(char) * 6);
 			temp->str = "(nil)";
 		}
-		printf("[%d] [%s]\n", temp->len, temp->str);
+		printf("[%d] %s\n", temp->len, temp->str);
 		res++;
 		temp = temp->next;
 	}

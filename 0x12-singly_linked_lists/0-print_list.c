@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 /**
  * print_list - print LL
  * @h: head of the list
@@ -5,21 +9,21 @@
  */
 size_t print_list(const list_t *h)
 {
-	int res = 0;
+	size_t res = 0;
 	list_t *temp = NULL;
 
 	temp = malloc(sizeof(list_t));
-	temp = h;
+	temp = (list_t *) h;
 
-	while (temp->next != NULL)
+	while (temp != NULL)
 	{
 		if (temp->str == NULL)
 		{
-			temp->n = 0;
+			temp->len = 0;
 			temp->str = malloc(sizeof(char) * 6);
 			temp->str = "(nil)";
 		}
-		printf("[%d] %s]n", temp->n, temp->str);
+		printf("[%d] [%s]\n", temp->len, temp->str);
 		res++;
 		temp = temp->next;
 	}

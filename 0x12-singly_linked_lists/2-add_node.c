@@ -20,13 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	temp->str = strdup(str);
 	temp->len = len;
-	temp->next = NULL;
-
-	if (*head == NULL)
-	{
-		return (temp);
-	}
-	temp->next = *head;
+	temp->next = (*head);
 	*head = temp;
 	return (*head);
 

@@ -2,7 +2,7 @@
 /**
  * hash_table_create - create a new hash table
  * @size: number of buckets
- * Return: the newly created hash table
+ * Return: the newly created hash table to be returned
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {

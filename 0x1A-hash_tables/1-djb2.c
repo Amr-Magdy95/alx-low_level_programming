@@ -1,4 +1,4 @@
-#include "hash_tables.c"
+#include "hash_tables.h"
 /**
  * hash_djb2 - implementing djb2 hashing
  * @str: string to be hashed

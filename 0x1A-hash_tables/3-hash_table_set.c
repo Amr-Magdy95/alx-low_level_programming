@@ -64,6 +64,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if ((strcmp(temp->key, newNode->key)) == 0)
 			{
+				temp->value = malloc(strlen(value) + 1);
+				if (temp->value == NULL)
+					return (0);
 				strcpy(temp->value, newNode->value);
 				free_node(newNode);
 				return (1);
